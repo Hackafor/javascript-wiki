@@ -2,7 +2,7 @@ import Link from 'next/link';
 import principal from '../estilos/Principal.module.css';
 import ButtonTheme from './ButtonTheme';
 
-export default function Principal(props) {
+export default function Principal() {
   return (
     <div className="contenedor dark:bg-slate-600 mx-auto px-4 sm:px-6 lg:px-8">
       <header>
