@@ -33,7 +33,7 @@ export default function Principal() {
               autoFocus
               type="search"
               name="search"
-              placeholder="porque typeof null es object"
+              placeholder="Por qué typeof null es object?"
               className={`${principal.search} block  w-full border p-2.5 pl-4 rounded-sm  text-sm text-gray-900 focus:border-purple-500 focus:outline-none focus:ring-blue-500 dark:border-gray-600  dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 `}
             ></input>
           </div>
