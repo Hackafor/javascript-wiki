@@ -4,6 +4,7 @@ specifiers:
   '@types/eslint': ^8.21.1
   '@types/node': ^18.11.18
   '@types/prettier': ^2.7.2
+  '@types/prismjs': ^1.26.0
   '@types/react': ^18.0.26
   '@types/react-dom': ^18.0.10
   '@typescript-eslint/eslint-plugin': ^5.47.1
@@ -35,6 +36,7 @@ devDependencies:
   '@types/eslint': 8.21.1
   '@types/node': 18.14.6
   '@types/prettier': 2.7.2
+  '@types/prismjs': 1.26.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': 5.54.1_mlk7dnz565t663n4razh6a6v6i
@@ -285,6 +287,10 @@ packages:
 
   /@types/prettier/2.7.2:
     resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
+    dev: true
+
+  /@types/prismjs/1.26.0:
+    resolution: {integrity: sha512-ZTaqn/qSqUuAq1YwvOFQfVW1AR/oQJlLSZVustdjwI+GZ8kr0MSHBj0tsXPW1EqHubx50gtBEjbPGsdZwQwCjQ==}
     dev: true
 
   /@types/prop-types/15.7.5:
