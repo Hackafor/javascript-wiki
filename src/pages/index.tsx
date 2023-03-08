@@ -1,11 +1,12 @@
 import { type NextPage } from 'next';
 import Principal from '~/Componentes/Principal';
+import Layout from '~/layouts/layout';
 
 const Home: NextPage = () => {
   return (
-    <main className="dark:bg-slate-600">
+    <Layout title="Home">
       <Principal />
-    </main>
+    </Layout>
   );
 };
 
