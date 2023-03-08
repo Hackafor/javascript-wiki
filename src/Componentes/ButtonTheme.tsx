@@ -2,63 +2,34 @@
 import React, { useEffect, useState } from 'react';
 import Moon from './icons/Moon';
 import Sun from './icons/Sun';
+import useLocalStorageState from 'use-local-storage-state';
 
 function ButtonTheme() {
-  const [theme, setTheme] = useState('');
+  // const [theme, setTheme] = useState('');
+  // const [query, setQuery] = useState('light');
 
-  useEffect(() => {
-    const colorScheme = window.localStorage.getItem('color-theme') || 'light';
-
-    if (colorScheme === 'light') {
-      document.documentElement.classList.remove('dark');
-      document.documentElement.style.backgroundColor = '#f6f6f6';
-      document.documentElement.style.setProperty('--bg-color', '#f6f6f6');
-      localStorage.setItem('color-theme', 'light');
-    } else {
-      document.documentElement.style.backgroundColor = '#475569';
-      document.documentElement.style.setProperty('--bg-color', '#1e293b');
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('color-theme', 'dark');
-    }
-
-    setTheme(colorScheme);
-  }, []);
+  const [theme, setTheme] = useLocalStorageState('color-theme', {
+    defaultValue: 'light',
+  });
 
   const handleClick = () => {
-    if (localStorage.getItem('color-theme')) {
-      if (localStorage.getItem('color-theme') === 'light') {
-        document.documentElement.style.backgroundColor = '#475569';
-        document.documentElement.style.setProperty('--bg-color', '#1e293b');
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('color-theme', 'dark');
-        setTheme('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-        document.documentElement.style.backgroundColor = '#ffffff';
-        document.documentElement.style.setProperty('--bg-color', '#ffffff');
-        localStorage.setItem('color-theme', 'light');
-        setTheme('light');
-      }
-      // if NOT set via local storage previously
+    if (theme === 'light') {
+      setTheme('dark');
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
     } else {
-      if (document.documentElement.classList.contains('dark')) {
-        document.documentElement.classList.remove('dark');
-        document.documentElement.style.backgroundColor = '#ffffff';
-        document.documentElement.style.setProperty('--bg-color', '#ffffff');
-        localStorage.setItem('color-theme', 'light');
-      } else {
-        document.documentElement.style.backgroundColor = '#1e293b';
-        document.documentElement.style.setProperty('--bg-color', '#1e293b');
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('color-theme', 'dark');
-      }
+      setTheme('light');
+      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
     }
   };
 
   return (
-    <button className="text-white" onClick={handleClick}>
-      {theme === 'light' ? <Sun /> : <Moon />}
-    </button>
+    <div className="bg-black rounded-md">
+      <button onClick={handleClick} className="text-white px-5 py-3">
+        {theme === 'light' ? <Sun /> : <Moon />}
+      </button>
+    </div>
   );
 }
 
