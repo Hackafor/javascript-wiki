@@ -1,5 +1,5 @@
 import { type NextPage } from 'next';
-import Principal from '~/Componentes/Principal';
+import Principal from '~/Componentes/home';
 
 const Home: NextPage = () => {
   return (

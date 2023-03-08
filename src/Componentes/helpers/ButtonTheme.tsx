@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import Moon from './icons/Moon';
-import Sun from './icons/Sun';
+import Moon from '../icons/Moon';
+import Sun from '../icons/Sun';
 
 function ButtonTheme() {
   const [theme, setTheme] = useState('');
