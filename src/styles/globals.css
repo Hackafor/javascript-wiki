@@ -34,7 +34,6 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  background-color: #ffffff;
   min-height: 100vh;
 }
 
@@ -60,16 +59,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

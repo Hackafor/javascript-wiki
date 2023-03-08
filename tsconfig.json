@@ -27,7 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
-    "**/*.mjs"
+    "**/*.mjs",
+    "src/Componentes/Layout.tsxx",
+    "src/Componentes/Layout.tsxx"
   ],
   "exclude": ["node_modules"]
 }

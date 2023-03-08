@@ -10,7 +10,7 @@ function ButtonTheme() {
     const colorScheme = window.localStorage.getItem('color-theme') || 'light';
 
     if (colorScheme === 'light') {
-      document.documentElement.style.backgroundColor = '#1e293b';
+      document.documentElement.style.backgroundColor = '#475569';
       document.documentElement.style.setProperty('--bg-color', '#1e293b');
       document.documentElement.classList.add('dark');
       localStorage.setItem('color-theme', 'dark');
@@ -27,15 +27,15 @@ function ButtonTheme() {
   const handleClick = () => {
     if (localStorage.getItem('color-theme')) {
       if (localStorage.getItem('color-theme') === 'light') {
-        document.documentElement.style.backgroundColor = '#1e293b';
+        document.documentElement.style.backgroundColor = '#475569';
         document.documentElement.style.setProperty('--bg-color', '#1e293b');
         document.documentElement.classList.add('dark');
         localStorage.setItem('color-theme', 'dark');
         setTheme('dark');
       } else {
         document.documentElement.classList.remove('dark');
-        document.documentElement.style.backgroundColor = '#f6f6f6';
-        document.documentElement.style.setProperty('--bg-color', '#f6f6f6');
+        document.documentElement.style.backgroundColor = '#ffffff';
+        document.documentElement.style.setProperty('--bg-color', '#ffffff');
         localStorage.setItem('color-theme', 'light');
         setTheme('light');
       }
@@ -43,8 +43,8 @@ function ButtonTheme() {
     } else {
       if (document.documentElement.classList.contains('dark')) {
         document.documentElement.classList.remove('dark');
-        document.documentElement.style.backgroundColor = '#f6f6f6';
-        document.documentElement.style.setProperty('--bg-color', '#f6f6f6');
+        document.documentElement.style.backgroundColor = '#ffffff';
+        document.documentElement.style.setProperty('--bg-color', '#ffffff');
         localStorage.setItem('color-theme', 'light');
       } else {
         document.documentElement.style.backgroundColor = '#1e293b';
