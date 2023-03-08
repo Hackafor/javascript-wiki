@@ -19,7 +19,6 @@ function Quest() {
   };
 
   useEffect(() => {
-    console.log(slug);
     highlight();
   }, [question]);
 
