@@ -44,7 +44,7 @@ export default function Principal() {
             return (
               <li>
                 <Link className="py-3" key={l.id} href={`/questions/${l.id}`}>
-                  <div className="duration-400 m-4 rounded-md bg-white p-6 shadow-md transition ease-in-out hover:scale-105 hover:transform hover:bg-blue-100">
+                  <div className="duration-400 dark:text-black m-4 rounded-md bg-white p-6 shadow-md transition ease-in-out hover:scale-105 hover:transform hover:bg-blue-100">
                     <h2 className="mb-4 text-lg font-bold">{l.title}</h2>
                   </div>
                 </Link>

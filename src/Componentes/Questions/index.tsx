@@ -24,7 +24,7 @@ function Question({ code, question, content }: Props) {
         >
           {like ? <Heart /> : <HeartBroken />}
         </button>
-        <h2>{question}</h2>
+        <h2 className="dark:text-white">{question}</h2>
         <div>
           <p>{content}</p>
         </div>
