@@ -56,7 +56,10 @@ function ButtonTheme() {
   };
 
   return (
-    <button className="text-white" onClick={handleClick}>
+    <button
+      className="text-white bg-blue-400 p-4 rounded-lg"
+      onClick={handleClick}
+    >
       {theme === 'light' ? <Sun /> : <Moon />}
     </button>
   );
