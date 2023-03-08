@@ -42,9 +42,9 @@ export default function Principal() {
         <ul className="grid place-content-center">
           {links.map((l) => {
             return (
-              <li>
+              <li className="flex flex-col gap-4">
                 <Link
-                  className="hover:underline py-3"
+                  className="hover:underline text-center"
                   key={l.id}
                   href={`/questions/${l.id}`}
                 >
