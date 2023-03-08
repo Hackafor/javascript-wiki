@@ -3,8 +3,14 @@ import Prism from 'prismjs';
 import { useEffect, useState } from 'react';
 import Question from './Question';
 
+interface Question {
+  code: string;
+  content: string;
+  title: string;
+}
+
 export default function Principal() {
-  const [question, setQuestion] = useState('');
+  const [question, setQuestion] = useState({} as Question);
   const highlight = () => {
     Prism.highlightAll(); // <--- prepare Prism
   };
