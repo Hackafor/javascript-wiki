@@ -29,6 +29,13 @@ function Navbar() {
         >
           Credits
         </Link>
+        <Link
+          className="hover:underline hover:text-blue-600 text-yellow-600 dark:text-yellow-300 dark:hover:text-blue-400 dark:bg-slate-600"
+          href="https://docs-wiki-js-api.netlify.app/"
+          target="_blank"
+        >
+          Docs API
+        </Link>
         <ButtonTheme />
       </nav>
     </header>
