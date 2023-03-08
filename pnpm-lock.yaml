@@ -22,6 +22,7 @@ specifiers:
   standard: 17.0.0
   tailwindcss: ^3.2.0
   typescript: ^4.9.4
+  use-local-storage-state: ^18.2.1
   zod: ^3.20.2
 
 dependencies:
@@ -30,6 +31,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   standard: 17.0.0_53m6aya5invuvxbjoqdrqnsizu
+  use-local-storage-state: 18.2.1_biqbaboplfbrettd7655fr4n2y
   zod: 3.21.4
 
 devDependencies:
@@ -2676,6 +2678,17 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.0
+
+  /use-local-storage-state/18.2.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-JgFWmMIIsN3uIQ2hSDhYGiYdfykMFVPNX/vz5JX/9V1igJSUjEe30CgswH076YqBx4Njea1NJ6B4farIlnSLuA==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
