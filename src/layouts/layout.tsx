@@ -16,9 +16,7 @@ export default function Layout({ children, title = '' }: Props) {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <main className="dark:bg-slate-600 px-4 md:px-[110px] mx-auto bg-[#F3F4F6]">
-        {children}
-      </main>
+      <main className="px-4 md:px-[110px] mx-auto p-4">{children}</main>
       <Footer />
     </>
   );
