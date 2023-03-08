@@ -1,7 +1,7 @@
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Head from 'next/head';
+import Navbar from '../Componentes/Navbar';
+import Footer from '../Componentes/Footer';
 import { ReactNode } from 'react';
-import Head from "next/head";
 
 interface Props {
   children?: ReactNode;
@@ -21,4 +21,3 @@ export default function Layout({ children, title = '' }: Props) {
     </>
   );
 }
-

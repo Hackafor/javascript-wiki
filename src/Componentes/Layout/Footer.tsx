@@ -1,5 +1,9 @@
 function Footer() {
-  return <div className="dark:bg-slate-600">Footer</div>;
+  return (
+    <footer className="dark:bg-slate-600 dark:text-white text-center p-4">
+      Footer
+    </footer>
+  );
 }
 
 export default Footer;
