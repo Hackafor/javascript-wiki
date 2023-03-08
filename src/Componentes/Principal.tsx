@@ -1,6 +1,26 @@
 import principal from '../estilos/Principal.module.css';
+import Prism from 'prismjs';
+import { useEffect, useState } from 'react';
+import Question from './Question';
 
 export default function Principal() {
+  const [question, setQuestion] = useState('');
+  const highlight = () => {
+    Prism.highlightAll(); // <--- prepare Prism
+  };
+
+  useEffect(() => {
+    highlight();
+  }, [question]);
+
+  useEffect(() => {
+    fetch('https://api-js-wiki.deno.dev/api/questions/this-js')
+      .then((d) => d.json())
+      .then((d) => {
+        setQuestion(d);
+      });
+  }, []);
+
   return (
     <div className="contenedor  dark:bg-slate-600 mx-auto px-4 sm:px-6 lg:px-8">
       <header>
@@ -19,6 +39,12 @@ export default function Principal() {
           ></input>
         </div>
       </header>
+
+      <Question
+        code={question.code}
+        content={question.content}
+        question={question.title}
+      />
 
       <section className="bg-gray-100 dark:bg-slate-600 py-8">
         <div className="container mx-auto">

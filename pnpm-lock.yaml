@@ -15,6 +15,7 @@ specifiers:
   postcss: ^8.4.14
   prettier: ^2.8.1
   prettier-plugin-tailwindcss: ^0.2.1
+  prismjs: 1.29.0
   react: 18.2.0
   react-dom: 18.2.0
   standard: 17.0.0
@@ -24,6 +25,7 @@ specifiers:
 
 dependencies:
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
+  prismjs: 1.29.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   standard: 17.0.0_53m6aya5invuvxbjoqdrqnsizu
@@ -2265,6 +2267,11 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
+
+  /prismjs/1.29.0:
+    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
+    engines: {node: '>=6'}
+    dev: false
 
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
