@@ -9,10 +9,12 @@ interface Props {
 function Question({ code, question, content }: Props) {
   return (
     <>
-      <h3 className="title">{question}</h3>
-      <div className="content">{content}</div>
+      <h3 className="title text-black dark:text-white">{question}</h3>
+      <div className="content text-black dark:text-white">{content}</div>
       <pre>
-        <code className="language-javascript">{code}</code>
+        <code className="language-javascript text-black dark:text-white">
+          {code}
+        </code>
       </pre>
     </>
   );
