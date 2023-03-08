@@ -1,7 +1,7 @@
 import principal from '~/estilos/Principal.module.css';
 import Prism from 'prismjs';
 import { useEffect, useState } from 'react';
-import Question from './Question';
+import Question from '../Questions';
 
 interface Question {
   code: string;

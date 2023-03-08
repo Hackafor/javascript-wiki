@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import Question from '../../Componentes/Question';
+import Question from '~/Componentes/Questions';
 import Prism from 'prismjs';
 import { useRouter } from 'next/router';
-import Layout from '~/layouts/layout';
+import Layout from '~/Componentes/Layout';
 
 interface Question {
   code: string;

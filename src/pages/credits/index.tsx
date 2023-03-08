@@ -1,4 +1,4 @@
-import Layout from '~/layouts/layout';
+import Layout from '~/Componentes/Layout';
 
 export default function Credits() {
   return (

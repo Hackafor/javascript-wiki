@@ -1,4 +1,5 @@
-import Layout from '~/layouts/layout';
+import Layout from '~/Componentes/Layout';
+
 export default function Libraries() {
   return (
     <Layout title="Libraries">
