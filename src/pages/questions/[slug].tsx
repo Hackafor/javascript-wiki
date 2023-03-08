@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Question from '../../Componentes/Question';
 import Prism from 'prismjs';
 import { useRouter } from 'next/router';
+import Layout from '~/layouts/layout';
 
 interface Question {
   code: string;
@@ -32,13 +33,13 @@ function Quest() {
   }, [router.isReady]);
 
   return (
-    <>
+    <Layout title="Question dinamica aqui">
       <Question
         code={question.code}
         content={question.content}
         question={question.title}
       />
-    </>
+    </Layout>
   );
 }
 
